@@ -3,7 +3,7 @@ if exists('g:loaded_vidir')
 endif
 let g:loaded_vidir = 1
 
-if @% =~ "/tmp/dir" 
+if @% =~ "dir....." 
   augroup vidir
     autocmd!
     autocmd VimEnter * lua require'vidir'.ls()
